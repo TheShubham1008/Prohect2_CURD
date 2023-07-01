@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<?php include 'links.php';?>
-	<?php include 'css/style.css' ?>
+	<?php include '/CURD/links.php';?>
+	<?php include '/CURD/css/style.css' ?>
 
 </head>
 <body>
@@ -30,7 +30,7 @@
 					</thead>
 					<tbody>
 						<?php
-						include 'connection.php';
+						include '/CURD/connection.php';
 						$selectquery="select*from `jobresgistration`";
 						$query =mysqli_query($con,$selectquery);
 						$nums=mysqli_num_rows($query);
