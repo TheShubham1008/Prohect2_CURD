@@ -1,6 +1,6 @@
 <?php
 
-include 'connection.php';
+include '/CURD/connection.php';
 $id=$_GET['id'];
 $deletequery="DELETE FROM `jobresgistration` WHERE ID=$id";
 $query=mysqli_query($con,$deletequery);
