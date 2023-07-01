@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
   <title>CURD</title>
-  <?php include 'links.php' ?>
-  <?php include 'css/style.css' ?>
+  <?php include '/CURD/links.php' ?>
+  <?php include '/CURD/css/style.css' ?>
 </head>
 <body>
 
@@ -28,11 +28,11 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <h3 class="register-heading">Apply For Web Developer</h3>
-                                <form action="index.php" method="POST">
+                                <form action="/CURD/index.php" method="POST">
 
                                 <div class="row register-form">
                                 	<?php
-										include 'connection.php';
+										include '/CURD/connection.php';
 										$ids=$_GET['id'];
 										$showquery="select*from `jobresgistration` where ID= {$ids}";
 										$showdata=mysqli_query($con,$showquery);
