@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <title>CURD</title>
-  <?php include 'links.php' ?>
-  <?php include 'css/style.css' ?>
+  <?php include '/CURD/links.php' ?>
+  <?php include '/CURD/css/style.css' ?>
 </head>
 <body>
 
@@ -80,7 +80,7 @@
 </html>
 
 <?php
-include 'connection.php';
+include '/CURD/connection.php';
 if(isset($_POST['submit'])){
     $name=$_POST['user'];
     $degree=$_POST['degree'];
